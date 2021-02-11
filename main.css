@@ -1,0 +1,421 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Anton', sans-serif;
+}
+
+body, html {
+    font-family: 'Abel', sans-serif;
+}
+#userboard {
+    width: 260px;
+    position: absolute;
+    will-change: transform;
+    top: 0px;
+    left: -15px;
+}
+.grayColorImage {
+    -webkit-filter: grayscale(100%) !important;
+    filter: grayscale(100%) !important;
+}
+.avatar-bg-index {
+    background-size: cover !important;
+    background-position: center !important;
+    width: 90px !important; 
+    height: 90px !important;
+}
+.avatar-bg {
+    background-size: cover !important;
+    background-position: center !important;
+    width: 34px !important; 
+    height: 34px !important;
+}
+.bg__index {
+    height: 300px;
+    background-size: cover !important;
+    background-position: 0px -200px !important;
+}
+.iconCreateForOffice {
+    color: #ffffff;
+    opacity: 0.6;
+    font-size: 100px;
+    padding-top: 25%;
+}
+.imageCreateForOffice {
+    background-position: center center !important;
+    background-size: cover !important;
+    display: block;
+    text-align: center;
+    width: 140px; 
+    height: 140px;
+}
+.editBGform {
+    width: 84px;
+    height: 84px;
+    margin: auto;
+    font-size: 30px !important;
+    border-radius: 50em;
+    z-index: 10;
+    margin-bottom: 15px;
+    overflow: hidden;
+    position: relative;
+}
+.editMovieCam {
+    position: absolute;
+    width: 84px;
+    height: 84px;
+    display: block;
+    z-index: 11;
+    color: #fff;
+    background: #00000094;
+    padding-top: 17px;
+    top: -85px;
+    transition: top 0.5s, transform 1s;
+}
+.editBGform:hover .editMovieCam {
+    top: 0;
+}
+
+.moon {
+    font-size: 50px;
+    opacity: 0.4;
+    margin-bottom: 15px;
+}
+.fancybox-thumbs__list a:before {border: 6px solid #4054b2 !important}
+.custom_header_object {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    height: 22px;
+}
+.pos-right-bottom {
+    position: fixed;
+    right: 0;
+    bottom: 7px;
+    margin: 15px;
+    z-index: 100;
+    opacity: 0.9 !important;
+}
+.drop_n_drops {
+    display: flex;
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+    width: 100%;
+    border: 1px dashed #ddd;
+    border-radius: 7px;
+    padding: 50px 0;
+    background: #fdfdfd;
+    opacity: 0.5;
+}
+.custom-input {
+    border-top: 0 !important;
+    border-right: 0 !important;
+    border-left: 0 !important;
+}
+.pos-right-bottom:hover {
+    opacity: 1 !important;
+    cursor:pointer;
+}
+.js-loon {
+    font-family: 'Abel', sans-serif;
+    font-weight: 600;
+}
+.js-loon-p {
+    font-family: 'Abel', sans-serif;
+}
+.js-loon-title {
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+}
+.real-img {
+    width: 100%; 
+    border-radius: 3px 3px 0px 0px
+}
+.real-pos-box {
+    position: relative !important;
+    padding: 0 !important;
+}
+.to-fix-header {
+    position: fixed !important;
+    z-index: 20 !important;
+    width: 100%;
+}
+.text-vera {
+    color: #4054b2 !important;
+}
+.btn-vera {
+    color:#dfdfdf;
+    background-color: #4054b2;
+    border-color: #4054b2;
+}
+footer {
+    background-color: transparent;
+    padding: 15px 0;
+    color: #ddd;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    bottom: 0;
+}
+.cp {cursor: pointer;}
+.xh-100 {
+    height: 100vh;
+}
+.u-header-search-form:hover, form input.u-header-search__field:focus  {
+    background-color: #f2f5fd;
+    outline: none;
+}
+#headerSearch .form-control {
+    background-color: transparent;
+}
+#headerSearch .form-control:focus {
+    background-color: #f2f5fd;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 15px;
+    background-color: #fff;
+    padding-top: 60px;
+    transition: 0.5s;
+    border-right: 1px solid #ddd;
+    overflow: hidden;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Abel', sans-serif;
+}
+.sidenav a:hover {
+    color: #333;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.close {
+    color: rgb(0, 0, 0) !important;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.ks-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    -js-display: flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 65px;
+    border-bottom: 1px solid #eaf2f9;
+    padding: 9px 20px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.ks-name {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 5px;
+    font-weight: 900;
+}
+.ks-amount {
+    color: #858585;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.ks-body li {
+    list-style-type: none;
+}
+.ks-body ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+.ks-body .ks-items, .ks-messenger__messages>.ks-body .ks-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding: 20px;
+}
+.ks-body .ks-items>.ks-item, .ks-messenger__messages>.ks-body .ks-items>.ks-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    -js-display: flex;
+    display: flex;
+    margin-bottom: 12px;
+}
+.ks-body .ks-items>.ks-item.ks-self>.ks-avatar, .ks-messenger__messages>.ks-body .ks-items>.ks-item.ks-self>.ks-avatar {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+}
+.ks-body .ks-items>.ks-item.ks-self>.ks-body, .ks-messenger__messages>.ks-body .ks-items>.ks-item.ks-self>.ks-body {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    border: solid 1px #dee0e1;
+    background-color: #fff;
+    -webkit-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+    margin-left: 14px;
+    margin-right: 100px;
+}
+.ks-body .ks-items>.ks-item>.ks-body, .ks-messenger__messages>.ks-body .ks-items>.ks-item>.ks-body {
+    font-size: 16px;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding: 12px 15px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    position: relative;
+}
+.ks-body .ks-items>.ks-item.ks-self>.ks-body:before, .ks-messenger__messages>.ks-body .ks-items>.ks-item.ks-self>.ks-body:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -10px;
+    top: -1px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #dee0e1;
+    border-right: 0 solid transparent;
+    border-bottom: 0 solid transparent;
+    border-left: 10px solid transparent;
+}
+.ks-body .ks-items>.ks-item.ks-self>.ks-body:after, .ks-messenger__messages>.ks-body .ks-items>.ks-item.ks-self>.ks-body:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -8px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #fff;
+    border-right: 0 solid transparent;
+    border-bottom: 0 solid transparent;
+    border-left: 10px solid transparent;
+}
+.ks-body .ks-datetime {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #858585;
+    font-family: 'Abel', sans-serif;
+}
+.ks-body .ks-items>.ks-item, .ks-messenger__messages>.ks-body .ks-items>.ks-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    -js-display: flex;
+    display: flex;
+    margin-bottom: 12px;
+}
+.ks-body .ks-items>.ks-item.ks-from>.ks-avatar, .ks-messenger__messages>.ks-body .ks-items>.ks-item.ks-from>.ks-avatar {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+}
+.ks-body .ks-items>.ks-item.ks-from>.ks-body, .ks-messenger__messages>.ks-body .ks-items>.ks-item.ks-from>.ks-body {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    background-color: #eff1f7;
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+    margin-right: 14px;
+    margin-left: 100px;
+}
+.ks-body .ks-items>.ks-item>.ks-body, .ks-messenger__messages>.ks-body .ks-items>.ks-item>.ks-body {
+    font-size: 14px;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding: 12px 15px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    position: relative;
+    font-family: 'Abel', sans-serif;
+}
+.ks-body .ks-items>.ks-item.ks-from>.ks-body:before, .ks-messenger__messages>.ks-body .ks-items>.ks-item.ks-from>.ks-body:before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: -10px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 0 solid transparent;
+    border-right: 0 solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #eff1f7;
+}
+.ks-body .ks-items>.ks-separator, .ks-messenger__messages>.ks-body .ks-items>.ks-separator {
+    color: #858585;
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.ks-footer, .ks-messenger__messages>.ks-footer {
+    padding: 15px 20px;
+    border-top: 1px solid #dee0e1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    -js-display: flex;
+    display: flex;
+}
+#userboard.dropdown-menu {
+    transform: translate3d(-97px, 34px, 0px);
+}
+
+@media screen and (min-width:0px) and (max-width:380px) 
+{
+    #userboard.dropdown-menu {
+        transform: translate3d(-213px, 34px, 0px);
+    }  
+
+    .you_tube_screen {
+        height: 192px !important;
+    }
+}
+
+@media screen and (min-width:381px) and (max-width:767px) { 
+    #userboard.dropdown-menu {
+        transform: translate3d(-99px, 34px, 0px);
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    #userboard.dropdown-menu {
+        transform: translate3d(-99px, 34px, 0px);
+    }
+}

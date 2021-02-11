@@ -1,0 +1,5 @@
+node_modules
+/*.txt
+/*.rar
+*.vscode/
+*.env

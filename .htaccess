@@ -1,0 +1,30 @@
+AddDefaultCharset UTF-8
+
+#php_flag  log_errors on
+#php_value error_log  ./error.log
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.(.*)$
+RewriteRule ^(.*)$ https://%1/$1 [L,R=301] 
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+#Redirect permanent /login https://defina.com
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME}\.php -f 
+RewriteRule ^(.*)$ $1.php 
+RewriteRule ^ñonfirmEmail/([0-9a-z_])/? ñonfirmEmail.php?token=$1 [L]
+RewriteRule ^403/?$ 403.php
+RewriteRule ^404/?$ 404.php
+RewriteRule ^500/?$ 500.php
+
+ErrorDocument 403 /403
+ErrorDocument 404 /404
+ErrorDocument 500 /500
+
+#<Files error.log>
+# Order allow,deny
+# Deny from all
+# Satisfy All
+#</Files>
