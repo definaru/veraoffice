@@ -1,2 +1,2 @@
-# vera_office
+# Vera Office
 Trading platform for brokers and real estate agents.
